@@ -1,0 +1,8 @@
+.description{
+    flex-direction: row;
+}
+
+.suggestion{
+    display: flex;
+    justify-content: space-between;
+}

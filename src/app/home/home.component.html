@@ -1,0 +1,33 @@
+<div class="calendar-container">
+    <a class="calendar" *ngFor="let day of [-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7]" (click)="changeMatchDay(day)"
+        [ngClass]="(day==0)?'active':''">
+        <div *ngIf="getDateAt(day).toDateString() == today.toDateString()">Today</div>
+        <div *ngIf="getDateAt(day).toDateString() != today.toDateString()">{{ days[getDateAt(day).getDay()] }}</div>
+        <div>{{ getDateAt(day) | date:'dd.MM.'}}</div>
+    </a>
+</div>
+<br><br>
+<mat-accordion class="example-headers-align">
+    <mat-expansion-panel *ngFor="let champ of matches; let i=index"
+        [expanded]="champ[0].competition.code == currChampionship || i === 0" hideToggle>
+        <mat-expansion-panel-header (click)="setCurrentChampionship(champ[0].competition.code)">
+            <mat-panel-title>
+                <div class="competLogo"><img [src]="champ[0].competition.logo" width="25" height="25" alt="logo" />
+                </div>
+                <div class="competName">{{ champ[0].competition.name }}</div>
+            </mat-panel-title>
+            <mat-panel-description class="country">
+                <div class="countryName">{{ champ[0].competition.areaName }}</div>
+                <div class="countryFlag">
+                    <img [src]="champ[0].competition.areaFlag"
+                        width="30" height="20" alt="logo" />
+                </div>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <ng-container *ngFor="let match of champ">
+            <app-match-preview [match]="match" [type]="'HOME'" style="width: 50%;"></app-match-preview>
+        </ng-container>
+        <mat-button-toggle class="w-100" (click)="detailCompetition(champ[0].competition.code)">Competition<mat-icon
+                fontIcon=""></mat-icon></mat-button-toggle>
+    </mat-expansion-panel>
+</mat-accordion>

@@ -1,0 +1,53 @@
+<div class="match card">
+    <div style="width: 15%;">
+        <div class="date" *ngIf="type != 'HOME'">
+            {{ match.date | date:'dd.MM.yy' }}
+        </div>
+        <div class="date" [ngClass]="(type == 'HOME')?'middle-1':''">
+            {{ match.date | date:'HH:mm' }}
+        </div>
+    </div>
+    <div style="width: 40%; align-items: center;">
+        <div class="name" [ngClass]="(match.winner == 'HOME_TEAM' && match.status == 'FINISHED')?'winner':''">
+            <img [src]="match.homeTeam.logo" width="25" height="25" />
+            &nbsp;{{ match.homeTeam.name }}
+        </div>
+        <div class="name" [ngClass]="(match.winner == 'AWAY_TEAM' && match.status == 'FINISHED')?'winner':''">
+            <img [src]="match.awayTeam.logo" width="25" height="25" />
+            &nbsp;{{ match.awayTeam.name }}
+        </div>
+    </div>
+    <div style="width: 20%;">
+        <div class="middle-1 text-end">
+            <span *ngIf="match.status == 'IN_PLAY'">{{ minutes }}'</span>
+            <span *ngIf="match.status == 'PAUSED'">Paused</span>
+            <span *ngIf="match.status == 'POSTPONED'">Postponed</span>
+        </div>
+    </div>
+    <div style="width: 20%;">
+        <div *ngIf="!['SCHEDULED','TIMED','POSTPONED'].includes(match.status)">
+            <div class="score">
+                <span class="goal" *ngIf="match.duration == 'PENALTY_SHOOTOUT'">
+                    ({{ match.homeTeam.score?.penalties }})
+                </span>
+                <span class="goal" *ngIf="match.duration != 'REGULAR'">
+                    {{ match.homeTeam.score?.fullTime }}
+                </span>
+                <span class="goal">
+                    {{ match.homeTeam.score?.regularTime }}
+                </span>
+            </div>
+            <div class="score">
+                <span class="goal" *ngIf="match.duration == 'PENALTY_SHOOTOUT'">
+                    ({{ match.awayTeam.score?.penalties }})
+                </span>
+                <span class="goal" *ngIf="match.duration != 'REGULAR'">
+                    {{ match.awayTeam.score?.fullTime }}
+                </span>
+                <span class="goal">
+                    {{ match.awayTeam.score?.regularTime }}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

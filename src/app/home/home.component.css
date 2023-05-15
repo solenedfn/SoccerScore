@@ -1,0 +1,84 @@
+.calendar {
+  text-align: center;
+  font-size: 1vw;
+  background-color: #f6f6f6;
+  color: rgb(41, 41, 41);
+  width: 10%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.calendar:hover {
+  background-color: #e6e6e6;
+}
+
+.calendar-container {
+  display: flex;
+  flex-direction: row;
+  margin: 1vw;
+}
+
+.active {
+  color: #df0303;
+}
+
+.button {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 1vw;
+  padding: 15px 25px;
+  font-size: 2vw;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #592941;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #586F7C;
+}
+
+.button:hover {
+  background-color: #591730
+}
+
+.button:active {
+  background-color: #591730;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.date {
+  margin-top: 1vw;
+  text-align: center;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.countryFlag {
+  display: inline-block;
+  text-align: center;
+}
+
+.countryName {
+  margin-right: 1vw;
+  ;
+  display: inline-block;
+  text-align: center;
+}
+
+.country {
+  text-align: center;
+  display: contents;
+}
+
+.competLogo {
+  margin-left: 3vw;
+}
+
+.competName {
+  margin-left: 1vw;
+}
+

@@ -1,0 +1,178 @@
+[
+    {
+        "name": "Allemagne",
+        "flag": "https://crests.football-data.org/759.svg",
+        "ids": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
+                31, 32, 33, 34, 35, 36, 37, 38, 39,
+                41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
+                53, 54, 55, 196, 198, 200, 201, 204, 209, 
+                213, 215, 217, 220, 225, 235, 719, 720, 721, 740, 741]
+    },
+    {
+        "name": "Angleterre",
+        "flag": "https://crests.football-data.org/770.svg",
+        "ids": [56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76,
+                322, 325, 328, 332, 336, 338, 340, 341, 342, 343, 345, 346, 347, 348, 349, 351, 354, 355,
+                356, 357, 361, 363, 365, 366, 369, 370, 371, 372, 376, 384, 385, 387, 389, 391, 393, 
+                394, 396, 397, 399, 400, 402, 404, 409, 411, 553, 554, 563, 715, 1044]
+    },
+    {
+        "name": "Espagne",
+        "flag": "https://crests.football-data.org/760.svg",
+        "ids": [77, 78, 79, 80, 81, 82, 83, 84, 86, 87, 88, 89, 90, 91, 92, 94, 95, 96, 237, 247, 250,
+                254, 258, 260, 263, 264, 267, 268, 269, 270, 272, 275, 276, 278, 279, 280, 281, 284, 285, 
+                286, 289, 295, 298, 299, 300, 302, 303, 304, 314, 550, 551, 558, 559, 560, 595, 596, 709,
+                745, 1046, 1048]
+    },
+    {
+        "name": "Italie",
+        "flag": "https://crests.football-data.org/784.svg",
+        "ids": [98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 112, 113, 114, 115, 
+                431, 436, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 457, 458, 460, 461,
+                464, 465, 466, 470, 471, 472, 479, 486, 487, 488, 489, 490, 492, 584, 585, 586, 587, 588, 589,
+                590, 591, 592, 593, 594, 713, 722, 723, 747]
+    },
+    {
+        "name": "Portugal",
+        "flag": "https://crests.football-data.org/765.svg",
+        "ids" : [496, 498, 499, 501, 503, 507, 508, 582, 583, 712, 809, 810, 1049, 1052]
+    },
+    {
+        "name": "France",
+        "flag": "https://crests.football-data.org/773.svg",
+        "ids": [510, 511, 512, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527,
+                528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 543, 544, 545,
+                546, 547, 548, 555, 556, 557, 565, 567, 569, 573, 576, 577, 742, 1042, 1045]
+    },
+    {
+        "name": "Turquie",
+        "flag": "https://crests.football-data.org/803.svg",
+        "ids": [598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 612, 613, 614]
+    },
+    {
+        "name": "Azerbaïdjan",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg",
+        "ids": [611, 916]
+    },
+    {
+        "name": "Roumanie",
+        "flag": "https://crests.football-data.org/811.svg",
+        "ids": [615, 689, 691, 692, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 912]
+    },
+    {
+        "name": "Grèce",
+        "flag": "https://crests.football-data.org/775.svg",
+        "ids": [642, 643, 644, 646, 647, 648, 649, 654, 655, 657, 662, 664]
+    },
+    {
+        "name": "Pays-Bas",
+        "flag": "https://crests.football-data.org/8601.svg",
+        "ids": [665, 666, 668, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683,
+                684, 718]
+    },
+    {
+        "name": "Belgique",
+        "flag": "https://crests.football-data.org/805.svg",
+        "ids": [726, 757, 851, 879, 890]
+    },
+    {
+        "name": "Russie",
+        "flag": "https://crests.football-data.org/808.svg",
+        "ids": [731, 751, 754, 755, 882, 1007]
+    },
+    {
+        "name": "Ecosse",
+        "flag": "https://crests.football-data.org/814.svg",
+        "ids": [732]
+    },
+    {
+        "name": "Slovénie",
+        "flag": "https://crests.football-data.org/777.svg",
+        "ids": [734]
+    },
+    {
+        "name": "Bielorussie",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Belarus.svg",
+        "ids": [748]
+    },
+    {
+        "name": "Suède",
+        "flag": "https://crests.football-data.org/792.svg",
+        "ids": [749]
+    },
+    {
+        "name": "Chypre",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Cyprus.svg",
+        "ids": [752, 910, 945]
+    },
+    {
+        "name": "Bulgarie",
+        "flag": "https://crests.football-data.org/817.svg",
+        "ids": [753, 928]
+    },
+    {
+        "name": "Pays",
+        "flag": "https://www.flashscore.com/res/_fs/build/world.b7d16db.png",
+        "ids": [756, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773,
+                774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 788, 789, 790, 791, 792, 793, 
+                794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 808, 809, 810, 811,
+                812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 825, 827, 828, 829, 830,
+                832, 833, 834, 835, 836, 838, 839, 840, 8601, 8030]
+    },
+    {
+        "name": "Ukraine",
+        "flag": "https://crests.football-data.org/790.svg",
+        "ids": [842]
+    },
+    {
+        "name": "Serbie",
+        "flag": "https://crests.football-data.org/780.svg",
+        "ids": [850]
+    },
+    {
+        "name": "Hongrie",
+        "flag": "https://crests.football-data.org/827.svg",
+        "ids": [859]
+    },
+    {
+        "name": "Bosnie-Herzégovine",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg",
+        "ids": [864, 1001]
+    },
+    {
+        "name": "Slovaquie",
+        "flag": "https://crests.football-data.org/768.svg",
+        "ids": [871, 949]
+    },
+    {
+        "name": "Tchéquie",
+        "flag": "https://crests.football-data.org/798.svg",
+        "ids": [880, 907, 930]
+    },
+    {
+        "name": "Israël",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg",
+        "ids": [884]
+    },
+    {
+        "name": "Suisse",
+        "flag": "https://crests.football-data.org/788.svg",
+        "ids": [729, 886, 1003]
+    },
+    {
+        "name": "Norvège",
+        "flag": "https://crests.football-data.org/813.svg",
+        "ids": [889]
+    },
+    {
+        "name": "Danemark",
+        "flag": "https://crests.football-data.org/782.svg",
+        "ids": [946]
+    },
+    {
+        "name": "Autriche",
+        "flag": "https://crests.football-data.org/816.svg",
+        "ids": [964]
+    }
+
+]

@@ -1,0 +1,58 @@
+.match {
+    flex-direction: row;
+}
+
+.goal {
+    text-align: center;
+    width: 25px;
+    height: 25px;
+}
+.date{
+    text-align: center;
+    height: 25px;
+    margin: 0.8vw;
+}
+
+.middle-1{
+    margin: 2vw;
+}
+
+.middle-2{
+    margin: 0.8vw;
+}
+
+.middle-3{
+    margin: 10%;
+}
+
+.cote {
+    text-align: center;
+    font-size: 0.5608333333333334vw;
+    height: 20px;
+    margin: 9%;
+    margin-top: 0.45vw;
+}
+
+.name {
+    display: flex;
+    margin: 0.8vw;
+    font-size: 0.8vw;
+    cursor: pointer;
+}
+
+.score {
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.8vw;
+}
+
+.winner {
+    font-weight: bold;
+}
+
+
+.goodCote{
+    background-color: black;
+    color: white;
+}

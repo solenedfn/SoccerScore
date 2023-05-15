@@ -1,0 +1,27 @@
+<table class="table table-light table-hover">
+  <thead>
+    <tr>
+      <th scope="col" class="text-center">#</th>
+      <th scope="col" class="text-left">Team</th>
+      <th scope="col" class="text-center">Matches played</th>
+      <th scope="col" class="text-center">Wins</th>
+      <th scope="col" class="text-center">Draws</th>
+      <th scope="col" class="text-center">Losses</th>
+      <th scope="col" class="text-center">Goals</th>
+      <th scope="col" class="text-center">Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let team of teams">
+      <th scope="row" class="text-center">{{ team.datas?.position }}</th>
+      <td class="text-left name"><img [src]="team.logo" width="25" height="25" />&nbsp;{{ team.shortName }}</td>
+      <td class="text-center">{{ team.datas?.playedGames }}</td>
+      <td class="text-center">{{ team.datas?.won }}</td>
+      <td class="text-center">{{ team.datas?.draw }}</td>
+      <td class="text-center">{{ team.datas?.lost }}</td>
+      <td class="text-center">{{ team.datas?.goalsFor }}:{{ team.datas?.goalsAgainst }}</td>
+      <td class="text-center">{{ team.datas?.points }}</td>
+    </tr>
+  </tbody>
+</table>
+
