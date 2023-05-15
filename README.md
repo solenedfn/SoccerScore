@@ -1,4 +1,4 @@
-# WinIsen
+# SoccerScore
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
@@ -37,22 +37,13 @@ Run `"~\Google\Chrome\Application\chrome.exe" --disable-web-security --user-data
 ## Open the webiste
 Follow the displayed link : http://localhost:4200 on your chrome session without CORS
 
-## Problem on odds 
-If you are not able to see the odds, you need to register on the website https://www.football-data.org/ and get an API key. Then, you need to subscribe as `Odds Add-On` and start a free trial. After that, you need to replace the API key in the variable token in file `src\app\variablesGlobale.ts` by your own API key.
-
 # How to use the project
 
 ## Home Page
-The home page is the page where you can see the list of the matches. You can filter the matches by the date. You can also sort the matches by the leagues. You can also see the odds of the match. If you click on the teams, you will be redirected to the page of the team. If you click on `Compétition`, you will be redirected to the page of the league.
+The home page is the page where you can see the list of the matches. You can filter the matches by the date. You can also sort the matches by the leagues. If you click on `Competition`, you will be redirected to the page of the league.
 
 ## League Page
-The league page is the page where you can see the list of the matches of the league sort by matchday, the classement and top scorers of the league. You can also see the odds of the match. If you click on the teams, you will be redirected to the page of the team. If you click on the players, you will be redirected to the page of the player.
-
-## Team Page
-The team page is the page where you can see the list of the past matches, the next matches, the players and current Competitions of the team. Matches are sort by the leagues. You can also see the odds of the match. If you click on the teams, you will be redirected to the page of the team.  If you click on the players, you will be redirected to the page of the player. If you click on the leagues, you will be redirected to the page of the league.
-
-## Player Page
-The player page is the page where you can see the list of the past matches of the player. Matches are sort by the leagues. You can also see the odds of the match. If you click on the teams, you will be redirected to the page of the team.
+The league page is the page where you can see the list of the matches of the league sort by matchday and the ranking of the league. 
 
 ## About Page
 The about page is the page where you can see the information about the project.
