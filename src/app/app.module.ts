@@ -22,6 +22,7 @@ import { AboutComponent } from './about/about.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
+import { BracketComponent } from './bracket/bracket.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { MatIconModule } from '@angular/material/icon';
     CompetitionComponent,
     TeamRankingComponent,
     AboutComponent,
+    BracketComponent,
   ],
   imports: [
     BrowserModule,

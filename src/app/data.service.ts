@@ -89,7 +89,7 @@ export class DataService {
       .pipe(map((data: any) => this.obj2Team(data)));
   }
 
-  getMatchesFromEquipe(code: string): Observable<Match[]> {
+  getMatchesFromTeam(code: string): Observable<Match[]> {
     return this.httpClient
       .get(this.BaseUrl + 'teams/' + code + '/matches', this.requestOptions)
       .pipe(map((data: any) => this.obj2ArrayMatchs(data)));

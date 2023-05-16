@@ -1,0 +1,36 @@
+<ng-container *ngFor="let match of bracket">
+  <div class="match card d-flex justify-content-between">
+    <div style="align-items: center;">
+      <div *ngIf="match.team1" (click)="detailTeam(match.team1.code)" class="name"
+        [ngClass]="(match.winner == match.team1 && match.status[1]??match.status[0] == 'FINISHED')?'winner':''">
+        <img [src]="match.team1.logo" width="25" height="25" />
+        &nbsp;{{ match.team1.name }}
+      </div>
+      <div *ngIf="match.team2" (click)="detailTeam(match.team2?.code)" class="name"
+        [ngClass]="(match.winner == match.team2 && match.status[1]??match.status[0] == 'FINISHED')?'winner':''">
+        <img [src]="match.team2.logo" width="25" height="25" />
+        &nbsp;{{ match.team2.name }}
+      </div>
+    </div>
+    <div class="d-flex">
+      <ng-container *ngFor="let i of [1,0]">
+        <div *ngIf="match.duration[i]=='PENALTY_SHOOTOUT'">
+          <div class="score" *ngFor="let j of [0,1]">
+            <span class="goals">
+              ({{ match.scores[i][j].penalties }})
+            </span>
+          </div>
+        </div>
+      </ng-container>
+      <ng-container *ngFor="let i of [1,0]">
+        <div *ngIf="!['SCHEDULED','TIMED','POSTPONED', undefined].includes(match.status[i])">
+          <div class="score" *ngFor="let j of [0,1]">
+            <span class="goals">
+              {{ match.scores[i][j]?.fullTime }}
+            </span>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</ng-container>

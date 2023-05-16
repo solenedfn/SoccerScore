@@ -69,22 +69,34 @@ export class CompetitionComponent implements OnInit {
           }
           let bracket: Array<Bracket> = []
           matches.forEach(match => {
-            let rencontre = bracket.find((rencontre: Bracket) => rencontre.team1?.code == match.awayTeam.code && rencontre.team2?.code == match.homeTeam.code)
-            if (rencontre) {
-              bracket.splice(bracket.indexOf(rencontre), 1)
-              rencontre.scores?.push([match.awayTeam.score!, match.homeTeam.score!])
-              rencontre.duration?.push(match.duration)
-              rencontre.status?.push(match.status)
-              if (match.awayTeam.score!.fullTime + rencontre.scores![0][0].fullTime > match.homeTeam.score!.fullTime + rencontre.scores![0][1].fullTime) {
-                rencontre.winner = rencontre.team1
-              } else if (match.awayTeam.score!.fullTime + rencontre.scores![0][0].fullTime < match.homeTeam.score!.fullTime + rencontre.scores![0][1].fullTime) {
-                rencontre.winner = rencontre.team2
-              } else if (match.awayTeam.score!.penalties > match.homeTeam.score!.penalties) {
-                rencontre.winner = rencontre.team1
-              } else if (match.awayTeam.score!.penalties < match.homeTeam.score!.penalties) {
-                rencontre.winner = rencontre.team2
+            let meet = bracket.find((rencontre: Bracket) => rencontre.team1?.code == match.awayTeam.code && rencontre.team2?.code == match.homeTeam.code)
+            if (meet) {
+              bracket.splice(bracket.indexOf(meet), 1);
+              meet.scores?.push([match.awayTeam.score!, match.homeTeam.score!]);
+              meet.duration?.push(match.duration);
+              meet.status?.push(match.status);
+              if (
+                match.awayTeam.score!.fullTime + meet.scores![0][0].fullTime >
+                match.homeTeam.score!.fullTime + meet.scores![0][1].fullTime
+              ) {
+                meet.winner = meet.team1;
+              } else if (
+                match.awayTeam.score!.fullTime + meet.scores![0][0].fullTime <
+                match.homeTeam.score!.fullTime + meet.scores![0][1].fullTime
+              ) {
+                meet.winner = meet.team2;
+              } else if (
+                match.awayTeam.score!.penalties >
+                match.homeTeam.score!.penalties
+              ) {
+                meet.winner = meet.team1;
+              } else if (
+                match.awayTeam.score!.penalties <
+                match.homeTeam.score!.penalties
+              ) {
+                meet.winner = meet.team2;
               }
-              bracket.push(rencontre)
+              bracket.push(meet);
             } else {
               bracket.push({
                 team1: match.homeTeam,
@@ -92,12 +104,21 @@ export class CompetitionComponent implements OnInit {
                 scores: [[match.homeTeam.score!, match.awayTeam.score!]],
                 duration: [match.duration],
                 status: [match.status],
-                winner: (match.homeTeam.score!.fullTime > match.awayTeam.score!.fullTime) ? match.homeTeam :
-                  (match.homeTeam.score!.fullTime < match.awayTeam.score!.fullTime) ? match.awayTeam :
-                    (match.homeTeam.score!.penalties > match.awayTeam.score!.penalties) ? match.homeTeam :
-                      (match.homeTeam.score!.penalties < match.awayTeam.score!.penalties) ? match.awayTeam :
-                        undefined
-              })
+                winner:
+                  match.homeTeam.score!.fullTime >
+                  match.awayTeam.score!.fullTime
+                    ? match.homeTeam
+                    : match.homeTeam.score!.fullTime <
+                      match.awayTeam.score!.fullTime
+                    ? match.awayTeam
+                    : match.homeTeam.score!.penalties >
+                      match.awayTeam.score!.penalties
+                    ? match.homeTeam
+                    : match.homeTeam.score!.penalties <
+                      match.awayTeam.score!.penalties
+                    ? match.awayTeam
+                    : undefined,
+              });
             }
           })
           if (bracket.length > 0) {
@@ -148,7 +169,7 @@ export class CompetitionComponent implements OnInit {
       case 'REGULAR_SEASON':
         switch (ranking.type) {
           case 'TOTAL':
-            return 'Global'
+            return 'Total'
           case 'HOME':
             return 'Home'
           case 'AWAY':
@@ -156,7 +177,7 @@ export class CompetitionComponent implements OnInit {
         }
         break;
       case 'GROUP_STAGE':
-        return 'Groupe ' + ranking.group.charAt(ranking.group.length - 1);
+        return 'Group ' + ranking.group.charAt(ranking.group.length - 1);
       case 'PRELIMINARY_ROUND':
       case 'FINAL_PHASE':
       case 'QUALIFICATION':
@@ -186,8 +207,8 @@ export class CompetitionComponent implements OnInit {
     this.currMatchDay = this.currMatches[this.currMatches.length - 1].matchday
     this.currMatches = this.currMatches.filter((match: Match) => match.matchday == this.currMatchDay)
     this.currRankings = this.competition.rankings!.filter(
-      (classement: Ranking) =>
-        classement.stage == this.currStage
+      (ranking: Ranking) =>
+        ranking.stage == this.currStage
     );
   }
 

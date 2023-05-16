@@ -1,0 +1,40 @@
+.match {
+  flex-direction: row;
+}
+
+.goals {
+  text-align: center;
+  width: 25px;
+  height: 25px;
+}
+
+.middle-1 {
+  margin: 2vw;
+}
+
+.middle-2 {
+  margin: 0.8vw;
+}
+
+.middle-3 {
+  margin: 10%;
+}
+
+
+.name {
+  display: flex;
+  margin: 0.8vw;
+  font-size: 0.8vw;
+  cursor: pointer;
+}
+
+.score {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.8vw;
+}
+
+.winner {
+  font-weight: bold;
+}
